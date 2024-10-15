@@ -15,9 +15,6 @@ from users.form import RegistrationForm, LoginForm
 from users.token import email_verification_token
 
 
-def home_view(request):
-    return HttpResponse("Welcome to the homepage!")
-
 
 def verify_email(request, uidb64, token):
     uid = force_str(urlsafe_base64_decode(uidb64))

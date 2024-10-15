@@ -17,6 +17,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -26,6 +27,8 @@ INSTALLED_APPS = [
 
     #my_apps
     'users',
+    'common',
+    'pages',
 ]
 
 MIDDLEWARE = [
@@ -80,7 +83,11 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
+
+LANGUAGES = (
+    ('en', 'English'),
+    ('ru', 'Uzbek'))
 
 TIME_ZONE = 'UTC'
 
